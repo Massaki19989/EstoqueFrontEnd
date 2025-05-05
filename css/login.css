@@ -105,3 +105,20 @@ input::placeholder{
     color: rgb(202, 202, 202);
     font-size:17px;
 }
+
+.err{
+    text-align: center;
+}
+
+.err p{
+    display: inline-block;
+    background: linear-gradient(rgb(190, 4, 4), rgb(133, 21, 21));
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.error p{
+    color: red !important;
+    text-align: left;
+    font-weight: bold;
+}

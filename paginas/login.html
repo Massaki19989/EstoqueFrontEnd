@@ -11,8 +11,10 @@
         
         <main>
             <div class="container">
-                <form action="" method="post'">
+                <form>
                     <h2>LOGIN DE ACESSO</h2>
+
+                    <div class="err"></div>
 
                     <div class="wrap">
                         <label for="email">Email:</label>
@@ -21,15 +23,16 @@
 
                     <div class="wrap">
                         <label for="password">Senha:</label>
-                        <input name="password" type="password" placeholder="Digite sua senha">
+                        <input name="password" type="password" placeholder="Digite sua senha" id="password">
                     </div><!--wrap-->
 
-                    <p>Não tem uma conta? <a href="">Cadastre-se</a></p>
+                    <p>Não tem uma conta? <a href="cadastrar.html">Cadastre-se</a></p>
 
                     <input type="submit" value="ACESSAR SISTEMA">
                 </form>
             </div>
         </main>
         <script src="../js/functions.js"></script>
+        <script src="../js/login.js"></script>
     </body>
 </html>
