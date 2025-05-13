@@ -1,0 +1,28 @@
+body{
+    overflow: hidden;
+}
+
+.content h2{
+    margin-bottom: 40px;
+}
+
+.pages{
+    text-align: center;
+}
+
+.pages a{
+    display: inline-block;
+    background-color: white;
+    margin-right: -4px;
+    padding: 0 10px;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    transition: 0.3s;
+}
+
+.pages a:hover{
+    background-color: rgb(226, 226, 226);
+}

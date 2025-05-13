@@ -1,0 +1,107 @@
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="../css/stock.css">
+        <link rel="stylesheet" href="../css/default.css">
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    </head>
+    <body>
+        <main>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-3 p0">
+                        <nav class="py-5">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Estoque</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Vendas</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Relatórios</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div><!--col-4-->
+
+                    <div class="col-9 p0">
+                        <section class="content p-4 text-light">
+                            <h2>Estoque</h2>
+
+                            <div class="filter px-4">
+                                <div class="row">
+                                    <div class="col-6">
+
+                                        <label for="">Ordem:</label>
+                                        <select name="" id="">
+                                            <option value="asc">Mais Novos</option>
+                                            <option value="des">Mais Antigos</option>
+                                        </select>
+
+                                    </div><!--col-6-->
+
+                                    <div class="col-6 text-end">
+                                        <label for="">Categoria:</label>
+                                        <select name="" id="">
+                                            <option value="">Categoria 1</option>
+                                            <option value="">Categoria 2</option>
+                                        </select>
+                                    </div><!--col-6-->
+                                </div><!--row-->
+                            </div><!--filter-->
+
+                            <table class="table">
+                                <tr>
+                                    <th>Nome</th>
+                                    <th>Quantidade</th>
+                                    <th>Preço</th>
+                                </tr>
+
+                                <tr>
+                                    <td>Produto 1</td>
+                                    <td>10</td>
+                                    <td>R$40,00</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Produto 1</td>
+                                    <td>10</td>
+                                    <td>R$40,00</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Produto 1</td>
+                                    <td>10</td>
+                                    <td>R$40,00</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Produto 1</td>
+                                    <td>10</td>
+                                    <td>R$40,00</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Produto 1</td>
+                                    <td>10</td>
+                                    <td>R$40,00</td>
+                                </tr>
+                            </table>
+                            <div class="pages">
+                                <a href="?pg=1">1</a>
+                                <a href="?pg=2">2</a>
+                            </div><!--pages-->
+                        </section><!--content-->
+                    </div><!--col-8-->
+                    
+                </div><!--row-->
+            </div><!--container-fluid-->
+        </main>
+    </body>
+</html>

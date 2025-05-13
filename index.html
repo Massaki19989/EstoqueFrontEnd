@@ -4,13 +4,21 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-    </head>
-    <body>
         <link rel="stylesheet" href="css/style.css">
-        <title>Document</title>
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        
     </head>
     <body>
-        
-
+        <div class="user-container hidden"><div class="user">
+            <div class="user-info">
+                <h2>Olá, <span id="user-name">Usuário</span></h2>
+                <p id="user-email">Email: exemplo@gmail.com<span id="email"></span></p>
+                <p id="user-cpf">Cpf: xxx.xxx.xxx-xx</p>
+            </div>
+            <div class="user-actions">
+                <button id="logout-button" class="bg-danger">Sair</button>
+            </div>
+        </div></div>
+        <script src="./js/index.js"></script>
     </body>
 </html>
