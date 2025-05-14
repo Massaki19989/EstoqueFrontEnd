@@ -6,12 +6,15 @@
 
 .user-container{
     position: fixed;
+    top: 0;
+    left: 0;
     height: 100vh;
     width: 100vw;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.496);
+    background-color: rgba(0, 0, 0, 0.863);
     transition: all 0.3s ease;
+    z-index: 9999;
 }
 
 .hidden{
@@ -46,3 +49,93 @@
     cursor: pointer;
     font-size: 17px;
 }
+
+/*dasodpgskdmg*/
+ 
+ header{
+     width: 100%;
+     margin: 0;
+     padding: 20px 0;
+     background-color: black;
+     z-index: 1000;
+ }
+
+ header .profile{
+    display: inline-block;
+    margin-right: -4px;
+    width: 50%;
+ }
+
+ header .menu{
+    display: inline-block;
+    margin-right: -4px;
+    width: 50%;
+    text-align: right;
+    visibility: hidden;
+ }
+ 
+ header svg{
+     color: white;
+     width: 40px;
+     height: 40px;
+     cursor: pointer;
+ }
+ 
+ header a{
+     color: rgb(255, 255, 255);
+     top: 60px; 
+     font-weight: bold;
+     text-decoration: none;
+     font-size:30px;
+     cursor: pointer;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+
+ .container-fluid{
+    text-align: center;
+}
+ 
+ .box{
+    display: inline-block;
+    width: 22%;
+    min-width: 300px;
+    margin-right: 1%;
+    vertical-align: middle;
+     background-color: rgb(65, 68, 73);
+     border-radius: 5px;
+     aspect-ratio: 300/150;
+     margin-top: 40px;
+     color: white;
+     font-size: 24px;
+     cursor: pointer;
+     position: relative;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+ 
+ .box .text-box{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+ }
+
+ .box:hover{
+     transform: scale(1.1);
+     transition: 2ms;
+     background-color: rgba(65, 68, 73, 0.766);
+     transition-duration: 2s;
+ }
+ 
+ .box svg{
+     width: 32px;
+     height: 32px;
+     vertical-align: middle;
+ }
+
+ .box span{
+    vertical-align: middle;
+ }
+ h2{
+     font-size: 32px;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+ 

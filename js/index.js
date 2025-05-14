@@ -1,11 +1,11 @@
 const userContainer = document.querySelector('.user-container');
 const user = document.querySelector('.user');
 
-/*
-window.addEventListener('click', (e)=>{
+
+document.querySelector('.profile').addEventListener('click', (e)=>{
     userContainer.classList.remove('hidden');
 })
-*/
+
 userContainer.addEventListener('click', (e)=>{
     e.stopPropagation();
     userContainer.classList.add('hidden');
