@@ -1,3 +1,4 @@
+const menuMobile = document.querySelector('.menu-mobile')
 const navComponent = `
     <ul class="nav flex-column">
 
@@ -30,4 +31,32 @@ const navComponent = `
 
 document.querySelector('nav').innerHTML = navComponent
 
-document.querySelector('.menu-mobile').innerHTML = navComponent
+menuMobile.innerHTML = navComponent
+
+const menuMobileUl = menuMobile.querySelector('ul')
+
+document.querySelector('.button-menu-mobile').addEventListener('click', ()=>{
+    
+
+
+    for(let i = 0; i < menuMobile.classList.length; i++){
+        if(menuMobile.classList[i] == 'd-block'){
+            menuMobile.classList.remove('d-block')
+            return
+        }
+    }
+
+    menuMobile.classList.add('d-block')
+
+
+})
+
+menuMobile.addEventListener('click', ()=>{
+    menuMobile.classList.remove('d-block')
+})
+
+
+menuMobileUl.addEventListener('click', (e)=>{
+    e.stopPropagation()
+})
+

@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 
-body{
+html, body{
+    width: 100%;
     overflow: hidden;
 }
 
@@ -69,7 +70,7 @@ nav li a:hover{
     overflow-y: scroll;
     position: relative;
     overflow-x: hidden;
- 
+    margin: 0;
 }
 
 .content::-webkit-scrollbar {
@@ -118,4 +119,56 @@ border: 3px solid black;
 
 .active{
     background-color: rgb(43, 43, 43);
+}
+
+.button-menu-mobile{
+    font-size: 25px;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    z-index: 9999999;
+    color: white;
+    background-color: rgb(65, 65, 65);
+    border-radius: 5px;
+    padding: 4px;
+}
+
+.menu-mobile{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.774);
+    z-index: 99999;
+    display: none;
+}
+
+.menu-mobile ul{
+    width: 500px;
+    max-width: 100vw;
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px 0px;
+    padding-bottom: 50px;
+}
+
+.menu-mobile li{
+    border-bottom: 1px solid gray;
+    text-align: center;
+}
+
+.menu-mobile li a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    width: 100%;
+    padding: 8px 0;
+}
+
+.menu-mobile li a:hover{
+    background-color: rgb(185, 185, 185);
 }
