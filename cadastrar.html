@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <link rel="stylesheet" href="../css/login.css">
+
+    </head>
+    <body>
+        <main>
+            <div class="container">
+                <form>
+                    <h2>REGISTRAR CONTA</h2>
+
+                    <div class="err"></div>
+
+                    <div class="wrap">
+                        <label for="name">Nome Completo:</label>
+                        <div class="err-name error"></div>
+                        <input name="name" type="text" placeholder="Digite seu nome completo" id="name">
+                    </div><!--wrap-->
+
+                    <div class="wrap">
+                        <label for="email">Email:</label>
+                        <div class="err-email error"></div>
+                        <input name="email" type="email" placeholder="Digite seu email cadastrado" id="email">
+                    </div><!--wrap-->
+
+                    <div class="wrap">
+                        <label for="cpf">Cpf:</label>
+                        <div class="err-cpf error"></div>
+                        <input name="cpf" type="text" placeholder="Digite seu cpf" id="cpf">
+                    </div><!--wrap-->
+
+                    <div class="wrap">
+                        <label for="password">Senha:</label>
+                        <div class="err-password error"></div>
+                        <input name="password" type="password" placeholder="Digite sua senha" id="password">
+                    </div><!--wrap-->
+
+                    <p>Já possui uma conta? <a href="login.html">Faça login!</a></p>
+
+                    <input type="submit" value="CRIAR CONTA">
+                </form>
+            </div>
+        </main>
+
+        <script src="../js/functions.js"></script>
+        <script src="../js/register.js"></script>
+    </body>
+</html>

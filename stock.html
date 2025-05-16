@@ -1,0 +1,121 @@
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="../css/stock.css">
+        <link rel="stylesheet" href="../css/default.css">
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    </head>
+    <body>
+        <main>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-3 d-none d-md-block p0">
+                        <nav class="py-5">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a href="../index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a class="active" href="stock.html">Estoque</a>
+                                </li>
+                                <li>
+                                    <a href="add-stock.html">Adicionar Produto</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="cadastrar-produto.html">Cadastrar Produto</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="" href="#">Vendas</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="" href="#">Relatórios</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div><!--col-4-->
+
+                    <div class="col-md-9 col-12 p0">
+                        <section class="content p-4">
+                            <h2>Estoque</h2>
+
+                            <div class="filter px-4">
+                                <div class="row">
+                                    <div class="col-md-4 col-6">
+
+                                        <label for="">Ordem:</label>
+                                        <select name="" id="">
+                                            <option value="asc">Mais Novos</option>
+                                            <option value="des">Mais Antigos</option>
+                                        </select>
+
+                                    </div><!--col-6-->
+
+                                    <div class="col-4 d-none d-md-block" style="position: relative;">
+                                        <div class="search">
+                                            <i class="bi bi-search"></i>
+                                            <input type="text" name="search" placeholder="procurar">
+                                        </div><!--search-->
+                                    </div><!--col-4-->
+
+                                    <div class="col-md-4 col-6 text-end">
+                                        <label for="">Categoria:</label>
+                                        <select name="" id="">
+                                            <option value="">Categoria 1</option>
+                                            <option value="">Categoria 2</option>
+                                        </select>
+                                    </div><!--col-6-->
+                                </div><!--row-->
+                            </div><!--filter-->
+
+                            <table class="table table-secondary">
+                                <tr>
+                                    <th>Nome</th>
+                                    <th>Quantidade</th>
+                                    <th>Preço</th>
+                                </tr>
+
+                                <tr>
+                                    <td>Produto 1</td>
+                                    <td>10</td>
+                                    <td>R$40,00</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Produto 1</td>
+                                    <td>10</td>
+                                    <td>R$40,00</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Produto 1</td>
+                                    <td>10</td>
+                                    <td>R$40,00</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Produto 1</td>
+                                    <td>10</td>
+                                    <td>R$40,00</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Produto 1</td>
+                                    <td>10</td>
+                                    <td>R$40,00</td>
+                                </tr>
+                            </table>
+                            <div class="pages">
+                                <a href="?pg=1">1</a>
+                                <a href="?pg=2">2</a>
+                            </div><!--pages-->
+                        </section><!--content-->
+                    </div><!--col-8-->
+                    
+                </div><!--row-->
+            </div><!--container-fluid-->
+        </main>
+    </body>
+</html>
