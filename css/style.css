@@ -56,7 +56,7 @@
      width: 100%;
      margin: 0;
      padding: 20px 0;
-     background: linear-gradient(to right,rgb(39, 116, 93), rgb(34, 87, 71));
+     background: linear-gradient(to right, black, rgb(64, 64, 64));
      z-index: 1000;
  }
 
@@ -103,7 +103,7 @@
 
  header .auth .r:hover{
     color: white !important;
-    background-color: rgb(40, 101, 193) !important;
+    background-color: rgb(25 135 84) !important;
  }
 
  .container-fluid{
@@ -116,7 +116,7 @@
     min-width: 300px;
     margin-right: 1%;
     vertical-align: middle;
-     background-color: rgb(39, 116, 93);
+     background-color: rgb(58, 58, 58);
      border-radius: 5px;
      aspect-ratio: 300/150;
      margin-top: 40px;
@@ -136,7 +136,7 @@
  .box:hover{
      transform: scale(1.05);
      transition: 2ms;
-     background-color: rgba(39, 116, 93, 0.881);
+     opacity: 0.8;
      transition-duration: 2s;
  }
  
@@ -151,7 +151,6 @@
  }
  
  main h2{
-    color: rgb(16, 132, 97);
      font-size: 34px;
      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
  }
