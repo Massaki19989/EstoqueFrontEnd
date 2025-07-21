@@ -8,19 +8,23 @@ async function apiConnect(email, password){
         password
     }
 
-    const resp = await fetch(url, {
-        method: "POST",
+
+    const resp = await fetch('http://localhost:3000/auth/login', {
+        method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify(data)
-    })
+        body: JSON.stringify(data),
+        credentials: 'include'
+        });
+
 
     const result = await resp.json()
 
     if(resp.status == 200 || resp.status == 201){
         document.querySelector('.err').innerHTML = ``
-        document.location = '../index.html'
+        console.log(result)
+        //document.location = '../index.html'
     }else{
         document.querySelector('.err').innerHTML = `<p>${result.error}</p>`
         let formHeight = document.querySelector("form").offsetHeight;
