@@ -24,12 +24,11 @@ async function apiConnect(email, password){
     if(resp.status == 200 || resp.status == 201){
         document.querySelector('.err').innerHTML = ``
         console.log(result)
-        //document.location = '../index.html'
+        document.location = '../index.html'
     }else{
         document.querySelector('.err').innerHTML = `<p>${result.error}</p>`
         let formHeight = document.querySelector("form").offsetHeight;
         let main = document.querySelector("main");
-
         main.style.minHeight = (formHeight + 40) + "px";
 
     }

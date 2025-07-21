@@ -1,3 +1,5 @@
+import { getUser } from './api/getUser.js';
+
 const userContainer = document.querySelector('.user-container');
 const user = document.querySelector('.user');
 const box = document.querySelectorAll('.box')
@@ -24,3 +26,15 @@ box.forEach(box=>{
     }
     
 })
+
+async function verifyLogin(){
+    const user = await getUser();
+    if(user.id){
+        document.querySelector(".auth").innerHTML = ` `
+        console.log(user)
+    }
+
+    
+}
+
+verifyLogin();
