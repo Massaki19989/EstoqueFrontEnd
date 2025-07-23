@@ -1,8 +1,8 @@
-import { API_LINK } from "./link";
+import { API_LINK } from './link.js';
 
 const url = API_LINK+'auth/logout'
 
-async function logout() {
+export async function logout() {
     try {
         const response = await fetch(url, {
             method: 'GET',
@@ -13,6 +13,6 @@ async function logout() {
         });
         console.log('Logout realizado com sucesso');
     } catch (error) {
-        console.error('Erro:', error);
+        return;
     }
 }

@@ -1,4 +1,4 @@
-import { API_LINK } from "./link";
+import { API_LINK } from "./link.js";
 
 const form = document.querySelector('form')
 const url = API_LINK+'login'

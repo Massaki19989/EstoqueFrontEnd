@@ -1,8 +1,9 @@
 import { getUser } from './api/getUser.js';
+import { logout } from './api/logout.js';
 
 const userContainer = document.querySelector('.user-container');
 const user = document.querySelector('.user');
-const box = document.querySelectorAll('.box')
+const box = document.querySelectorAll('.box');
 
 document.querySelector('.profile').addEventListener('click', (e)=>{
     userContainer.classList.remove('hidden');
@@ -38,10 +39,29 @@ async function verifyLogin(){
             document.querySelector('.user-container').classList.remove('hidden');
         })
         
-        console.log(user)
+        return user;
     }
-
     
 }
 
-verifyLogin();
+async function userVerify(){
+    const userS = await verifyLogin();
+    if(userS){
+        document.querySelector('.user-info').innerHTML = `
+            <h2>Olá, <span id="user-name">${userS.name}</span></h2>
+            <p id="user-email">Email: ${userS.email}<span id="email"></span></p>
+            <p id="user-cpf">Cpf: ${userS.cpf}</p>
+        `;
+        document.querySelector('#logout-button').addEventListener('click', async (e)=>{
+            const exit = await logout();
+            if(exit){
+                document.location.reload();
+            }else{
+                document.location.reload();
+            }
+        });
+    }
+    
+} 
+
+userVerify();
