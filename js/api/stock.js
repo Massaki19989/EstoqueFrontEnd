@@ -1,5 +1,7 @@
+import { API_LINK } from "./link";
+
 console.log(document.cookie); // Mostra todos os cookies acessíveis pelo JS
-const url = 'http://localhost:3000/stock'
+const url = API_LINK+'stock'
 
 async function fetchStock() {
     try {

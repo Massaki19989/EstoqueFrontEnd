@@ -1,5 +1,7 @@
+import { API_LINK } from "./link";
+
 const form = document.querySelector('form')
-const url = 'http://localhost:3000/auth/login'
+const url = API_LINK+'login'
 
 async function apiConnect(email, password){
 

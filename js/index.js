@@ -27,10 +27,17 @@ box.forEach(box=>{
     
 })
 
+
+
 async function verifyLogin(){
     const user = await getUser();
     if(user.id){
-        document.querySelector(".auth").innerHTML = ` `
+        document.querySelector(".auth").innerHTML = ` <button class="btn btn-success">Perfil</button> `
+
+        document.querySelector(".auth button").addEventListener('click', (e)=>{
+            document.querySelector('.user-container').classList.remove('hidden');
+        })
+        
         console.log(user)
     }
 

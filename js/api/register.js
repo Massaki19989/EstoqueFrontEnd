@@ -1,5 +1,7 @@
+import { API_LINK } from "./link"
+
 const form = document.querySelector('form')
-const url = 'http://localhost:3000/auth/register'
+const url = API_LINK+'auth/register'
 const errors = document.querySelectorAll('.error')
 async function reqApi(name, email, cpf, password) {
     const data = {

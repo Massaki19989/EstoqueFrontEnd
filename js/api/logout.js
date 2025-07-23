@@ -1,4 +1,6 @@
-const url = 'http://localhost:3000/auth/logout'
+import { API_LINK } from "./link";
+
+const url = API_LINK+'auth/logout'
 
 async function logout() {
     try {

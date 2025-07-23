@@ -1,5 +1,6 @@
+import { API_LINK } from './link.js';
 console.log(document.cookie); // Mostra todos os cookies acessíveis pelo JS
-const url = 'http://localhost:3000/user'
+const url = API_LINK+'user'
 
 export async function getUser() {
     try {
